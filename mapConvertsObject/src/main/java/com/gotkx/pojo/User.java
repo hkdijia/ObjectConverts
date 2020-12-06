@@ -1,4 +1,4 @@
-package com.gotkx.introspector.pojo;
+package com.gotkx.pojo;
 
 import java.util.List;
 
@@ -37,5 +37,15 @@ public class User {
 
     public void setRoleList(List<Role> roleList) {
         this.roleList = roleList;
+    }
+
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "userId='" + userId + '\'' +
+                ", userName='" + userName + '\'' +
+                ", roleList=" + roleList +
+                '}';
     }
 }

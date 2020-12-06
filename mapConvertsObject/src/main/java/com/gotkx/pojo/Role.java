@@ -1,4 +1,4 @@
-package com.gotkx.introspector.pojo;
+package com.gotkx.pojo;
 
 public class Role {
     String roleCode;
@@ -28,4 +28,11 @@ public class Role {
         this.roleName = roleName;
     }
 
+    @Override
+    public String toString() {
+        return "Role{" +
+                "roleCode='" + roleCode + '\'' +
+                ", roleName='" + roleName + '\'' +
+                '}';
+    }
 }
